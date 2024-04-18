@@ -46,8 +46,16 @@ func main() {
 	for key, value := range assetsCountInfo {
 	    fmt.Printf("key=%s, value=%d\n", key, value)
 	}
+
+	var arr = []int{1, 2, 3, 4, 5}
+	testArrayChange(arr)
+	fmt.Println(arr)
 }
 
 func customPrint(x []int){
 	fmt.Printf("len=%d, cap=%d, value=%v\n", len(x), cap(x), x)
+}
+
+func testArrayChange(x []int) {
+	x[0] = 100
 }
