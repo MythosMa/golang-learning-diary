@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
     fmt.Println("hello world!")
@@ -46,4 +49,12 @@ func main() {
 	)
 
 	fmt.Println(aaa, bbb, ccc, ddd, eee, fff, ggg, hhh, iii, jjj, kkk, lll, mmm, nnn, ooo)
+
+	var str string = "hello, will"
+	fmt.Println(strings.Replace(str, "ll", "ff", 3))
+
+	fmt.Println(strings.Repeat("abc", 12))
+	fmt.Println(strings.Split("abc,def,ghi", ","))
+	fmt.Println(strings.Fields("abc def    ghi"))
+
 }
