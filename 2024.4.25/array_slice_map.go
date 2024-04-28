@@ -40,4 +40,7 @@ func main() {
 	}
 	fmt.Println(items)
 
+	items2 := [...]int{10, 20, 30, 40, 50}
+	fmt.Println(len(items2[2:2]))
+	fmt.Println(len(items2[2:3]))
 }
